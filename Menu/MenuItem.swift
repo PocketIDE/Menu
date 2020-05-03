@@ -55,7 +55,7 @@ public extension UIKeyModifierFlags {
     }
 }
 
-public struct ShortcutMenuItem: Equatable, MenuItem {
+public class ShortcutMenuItem: Equatable, MenuItem {
     public static var displayShortcuts: Bool = true
     
     public struct Shortcut: Equatable {
@@ -64,6 +64,7 @@ public struct ShortcutMenuItem: Equatable, MenuItem {
         public let title: String
     }
     
+    @objc
     public var action: () -> Void = {}
     
     public let name: String
@@ -96,10 +97,14 @@ public struct ShortcutMenuItem: Equatable, MenuItem {
 public extension ShortcutMenuItem {
     public var keyCommand: UIKeyCommand? {
         //TODO: Needs updating
-//        if let shortcut = shortcut {
-//            return UIKeyCommand(input: shortcut.key, modifierFlags: shortcut.modifiers, action: action, discoverabilityTitle: shortcut.title)
-//        }
+        if let shortcut = shortcut {
+            return UIKeyCommand(input: shortcut.key, modifierFlags: shortcut.modifiers, action: #selector(self.callSelfAction), discoverabilityTitle: shortcut.title)
+        }
         
         return nil
+    }
+    
+    @objc func callSelfAction() {
+        self.action()
     }
 }
