@@ -10,6 +10,13 @@
 		EB1CE688245E6C1A00489F4B /* Menu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB1CE67E245E6C1A00489F4B /* Menu.framework */; };
 		EB1CE68D245E6C1A00489F4B /* MenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1CE68C245E6C1A00489F4B /* MenuTests.swift */; };
 		EB1CE68F245E6C1A00489F4B /* Menu.h in Headers */ = {isa = PBXBuildFile; fileRef = EB1CE681245E6C1A00489F4B /* Menu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB1CE69D245E6C4900489F4B /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1CE698245E6C4800489F4B /* MenuItem.swift */; };
+		EB1CE69E245E6C4900489F4B /* MenuContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1CE699245E6C4800489F4B /* MenuContents.swift */; };
+		EB1CE69F245E6C4900489F4B /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1CE69A245E6C4800489F4B /* MenuView.swift */; };
+		EB1CE6A0245E6C4900489F4B /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1CE69B245E6C4900489F4B /* MenuItemView.swift */; };
+		EB1CE6A1245E6C4900489F4B /* MenuTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1CE69C245E6C4900489F4B /* MenuTheme.swift */; };
+		EB1CE6A4245E6CC400489F4B /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB1CE6A3245E6CC400489F4B /* SnapKit.framework */; };
+		EB1CE6A5245E6CC400489F4B /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB1CE6A3245E6CC400489F4B /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,6 +29,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		EB1CE6A6245E6CC400489F4B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EB1CE6A5245E6CC400489F4B /* SnapKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		EB1CE67E245E6C1A00489F4B /* Menu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Menu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB1CE681245E6C1A00489F4B /* Menu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
@@ -29,6 +50,12 @@
 		EB1CE687245E6C1A00489F4B /* MenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB1CE68C245E6C1A00489F4B /* MenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTests.swift; sourceTree = "<group>"; };
 		EB1CE68E245E6C1A00489F4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB1CE698245E6C4800489F4B /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		EB1CE699245E6C4800489F4B /* MenuContents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuContents.swift; sourceTree = "<group>"; };
+		EB1CE69A245E6C4800489F4B /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		EB1CE69B245E6C4900489F4B /* MenuItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
+		EB1CE69C245E6C4900489F4B /* MenuTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTheme.swift; sourceTree = "<group>"; };
+		EB1CE6A3245E6CC400489F4B /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB1CE6A4245E6CC400489F4B /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +84,7 @@
 				EB1CE680245E6C1A00489F4B /* Menu */,
 				EB1CE68B245E6C1A00489F4B /* MenuTests */,
 				EB1CE67F245E6C1A00489F4B /* Products */,
+				EB1CE6A2245E6CC400489F4B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +100,11 @@
 		EB1CE680245E6C1A00489F4B /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				EB1CE699245E6C4800489F4B /* MenuContents.swift */,
+				EB1CE698245E6C4800489F4B /* MenuItem.swift */,
+				EB1CE69B245E6C4900489F4B /* MenuItemView.swift */,
+				EB1CE69C245E6C4900489F4B /* MenuTheme.swift */,
+				EB1CE69A245E6C4800489F4B /* MenuView.swift */,
 				EB1CE681245E6C1A00489F4B /* Menu.h */,
 				EB1CE682245E6C1A00489F4B /* Info.plist */,
 			);
@@ -84,6 +118,14 @@
 				EB1CE68E245E6C1A00489F4B /* Info.plist */,
 			);
 			path = MenuTests;
+			sourceTree = "<group>";
+		};
+		EB1CE6A2245E6CC400489F4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB1CE6A3245E6CC400489F4B /* SnapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,6 +150,7 @@
 				EB1CE67A245E6C1A00489F4B /* Sources */,
 				EB1CE67B245E6C1A00489F4B /* Frameworks */,
 				EB1CE67C245E6C1A00489F4B /* Resources */,
+				EB1CE6A6245E6CC400489F4B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,6 +191,7 @@
 				TargetAttributes = {
 					EB1CE67D245E6C1A00489F4B = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 					EB1CE686245E6C1A00489F4B = {
 						CreatedOnToolsVersion = 11.4.1;
@@ -195,6 +239,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB1CE6A0245E6C4900489F4B /* MenuItemView.swift in Sources */,
+				EB1CE69E245E6C4900489F4B /* MenuContents.swift in Sources */,
+				EB1CE69F245E6C4900489F4B /* MenuView.swift in Sources */,
+				EB1CE6A1245E6C4900489F4B /* MenuTheme.swift in Sources */,
+				EB1CE69D245E6C4900489F4B /* MenuItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,12 +389,17 @@
 		EB1CE693245E6C1A00489F4B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = MM9FB5DU88;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Menu/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -356,6 +410,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.pocketide.Menu;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,12 +419,17 @@
 		EB1CE694245E6C1A00489F4B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = MM9FB5DU88;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Menu/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -388,6 +448,7 @@
 		EB1CE696245E6C1A00489F4B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MM9FB5DU88;
 				INFOPLIST_FILE = MenuTests/Info.plist;
@@ -406,6 +467,7 @@
 		EB1CE697245E6C1A00489F4B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MM9FB5DU88;
 				INFOPLIST_FILE = MenuTests/Info.plist;
