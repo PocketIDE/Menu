@@ -17,7 +17,6 @@
 		EB1CE6A1245E6C4900489F4B /* MenuTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1CE69C245E6C4900489F4B /* MenuTheme.swift */; };
 		EB1CE6A4245E6CC400489F4B /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB1CE6A3245E6CC400489F4B /* SnapKit.framework */; };
 		EB1CE6A5245E6CC400489F4B /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB1CE6A3245E6CC400489F4B /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EB34052A245E7D0800F745CA /* Util in Resources */ = {isa = PBXBuildFile; fileRef = EB340529245E7D0800F745CA /* Util */; };
 		EBE93F44245E7DB5004CB8FB /* UIScrollView+ScrollToRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE93F43245E7DB5004CB8FB /* UIScrollView+ScrollToRect.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,7 +57,6 @@
 		EB1CE69B245E6C4900489F4B /* MenuItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
 		EB1CE69C245E6C4900489F4B /* MenuTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTheme.swift; sourceTree = "<group>"; };
 		EB1CE6A3245E6CC400489F4B /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
-		EB340529245E7D0800F745CA /* Util */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Util; sourceTree = "<group>"; };
 		EBE93F43245E7DB5004CB8FB /* UIScrollView+ScrollToRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+ScrollToRect.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,7 +103,6 @@
 			isa = PBXGroup;
 			children = (
 				EBE93F43245E7DB5004CB8FB /* UIScrollView+ScrollToRect.swift */,
-				EB340529245E7D0800F745CA /* Util */,
 				EB1CE699245E6C4800489F4B /* MenuContents.swift */,
 				EB1CE698245E6C4800489F4B /* MenuItem.swift */,
 				EB1CE69B245E6C4900489F4B /* MenuItemView.swift */,
@@ -228,7 +225,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB34052A245E7D0800F745CA /* Util in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
