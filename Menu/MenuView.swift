@@ -353,7 +353,12 @@ public class MenuView: UIView, MenuThemeable, UIGestureRecognizerDelegate {
     public override var keyCommands: [UIKeyCommand]? {
         var commands: [UIKeyCommand] = []
         for item in itemsSource() {
-            commands += item.view.keyCommands ?? []
+            if item is ShortcutMenuItem {
+                let shortcutItem = item as! ShortcutMenuItem
+                if shortcutItem.keyCommand != nil {
+                    commands.append(shortcutItem.keyCommand!)
+                }
+            }
         }
         return commands
     }
