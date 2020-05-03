@@ -105,6 +105,7 @@ public extension ShortcutMenuItem {
     }
     
     @objc func callSelfAction() {
+        print("Got action from KeyCommand")
         self.action()
     }
 }
