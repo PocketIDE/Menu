@@ -1,9 +1,26 @@
 {
+  "Mac" : [
+    {
+      "name" : "SnapKit",
+      "hash" : "d826ea2edbe1e683133220643ad8a1bd548440e89dcde1f20c3554a8b1535778",
+      "swiftToolchainVersion" : "5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)"
+    }
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+    {
+      "name" : "SnapKit",
+      "hash" : "12c628cd940ea8c37e4a1f471219a3feef063aebd30e6969ec8aa465b1ae4baa",
+      "swiftToolchainVersion" : "5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)"
+    }
+  ],
   "commitish" : "5.0.1",
   "iOS" : [
     {
       "name" : "SnapKit",
-      "hash" : "b9ac10742ab66565e6ca08a933b00022cf2e277034363f87d65c962b24665e82",
+      "hash" : "308142b4d9abd49efef3d1e72048b1ddb1a6c2bfd1ac007bcaf310912463df97",
       "swiftToolchainVersion" : "5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)"
     }
   ]
