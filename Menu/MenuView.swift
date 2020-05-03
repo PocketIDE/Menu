@@ -349,4 +349,12 @@ public class MenuView: UIView, MenuThemeable, UIGestureRecognizerDelegate {
     public override func tintColorDidChange() {
         titleLabel.textColor = tintColor
     }
+    
+    public override var keyCommands: [UIKeyCommand]? {
+        var commands: [UIKeyCommand] = []
+        for item in itemsSource() {
+            commands += item.view.keyCommands ?? []
+        }
+        return commands
+    }
 }
