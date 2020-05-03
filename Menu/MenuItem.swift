@@ -64,7 +64,6 @@ public class ShortcutMenuItem: Equatable, MenuItem {
         public let title: String
     }
     
-    @objc
     public var action: () -> Void = {}
     
     public let name: String
@@ -89,6 +88,7 @@ public class ShortcutMenuItem: Equatable, MenuItem {
         return lhs.name == rhs.name && lhs.shortcut == rhs.shortcut
     }
     
+    @objc
     public func performAction() {
         action()
     }
@@ -98,7 +98,7 @@ public extension ShortcutMenuItem {
     public var keyCommand: UIKeyCommand? {
         //TODO: Needs updating
         if let shortcut = shortcut {
-            return UIKeyCommand(input: shortcut.key, modifierFlags: shortcut.modifiers, action: #selector(getter: self.action), discoverabilityTitle: shortcut.title)
+            return UIKeyCommand(input: shortcut.key, modifierFlags: shortcut.modifiers, action: #selector(self.performAction), discoverabilityTitle: shortcut.title)
         }
         
         return nil
