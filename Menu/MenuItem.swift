@@ -98,14 +98,9 @@ public extension ShortcutMenuItem {
     public var keyCommand: UIKeyCommand? {
         //TODO: Needs updating
         if let shortcut = shortcut {
-            return UIKeyCommand(input: shortcut.key, modifierFlags: shortcut.modifiers, action: #selector(self.callSelfAction), discoverabilityTitle: shortcut.title)
+            return UIKeyCommand(input: shortcut.key, modifierFlags: shortcut.modifiers, action: #selector(getter: self.action), discoverabilityTitle: shortcut.title)
         }
         
         return nil
-    }
-    
-    @objc func callSelfAction() {
-        print("Got action from KeyCommand")
-        self.action()
     }
 }
