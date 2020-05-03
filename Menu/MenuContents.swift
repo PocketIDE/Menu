@@ -346,7 +346,7 @@ class MenuContents: UIView {
                 let rect = item.initialFocusedRect {
                 
                 let updatedRect = item.convert(rect, to: scrollView)
-                scrollView.scrollRectToVisible(updatedRect, animated: false)
+                scrollView.scroll(toVisible: updatedRect, animated: false)
                 
                 break
             }
